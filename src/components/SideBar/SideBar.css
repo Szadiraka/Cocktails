@@ -1,0 +1,119 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100vh;
+  background-color: black;
+  color: white;
+  border-left: 3px solid white;
+  border-right: 3px solid white;
+  /* overflow-y: auto; */
+}
+
+.sidebar .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: start;
+  padding: 10px;
+  margin-top: 30px;
+}
+
+.container .title {
+  padding-left: 2rem;
+  margin: 0 0 1rem;
+}
+
+ul {
+  padding-left: 5px;
+  list-style: none;
+  margin: 0;
+  font-size: 14px;
+}
+
+/* Category Section */
+.categorySection label:hover {
+  color: rgb(18, 191, 133);
+  cursor: pointer;
+}
+
+.categorySection .title {
+  color: rgb(18, 191, 133);
+}
+
+.filter li input {
+  margin-right: 12px;
+}
+
+.categorySection {
+  padding-bottom: 5px;
+  border-bottom: 1px solid white;
+}
+
+/* Alcohol Section */
+
+.alcoholicSection {
+  padding-bottom: 5px;
+  padding-right: 10px;
+  margin-top: 10px;
+  border-bottom: 1px solid white;
+}
+
+.alcoholicSection label:hover {
+  color: rgb(181, 238, 89);
+  cursor: pointer;
+}
+
+.alcoholicSection .title {
+  color: rgb(181, 238, 89);
+}
+
+/* Ingredient Section */
+.ingredientSection {
+  margin-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid white;
+}
+
+.ingredientSection .title {
+  color: rgb(103, 161, 238);
+}
+
+.ingredientSection input {
+  border: none;
+  outline: none;
+  padding: 10px 5px;
+  background-color: rgb(103, 161, 238);
+  border-radius: 5px;
+  color: white;
+}
+.ingredientSection datalist {
+  background-color: lightgrey;
+}
+
+/* Glass Section */
+
+.glassSection {
+  margin-top: 10px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid white;
+}
+
+.glassSection .title {
+  color: rgb(139, 23, 23);
+}
+
+.glassSection input {
+  border: none;
+  outline: none;
+  padding: 10px 5px;
+  background-color: rgb(99, 231, 198);
+  border-radius: 5px;
+  color: white;
+}
+
+datalist {
+  max-height: 120px;
+}
