@@ -28,7 +28,7 @@
   border-bottom: 2px solid white;
 }
 
-.flex-container {
+.content .header .flex-container {
   display: flex;
   height: 100%;
   flex-direction: row;
@@ -37,7 +37,7 @@
   padding: 0 40px;
 }
 
-.logo {
+content .header .flex-container .logo {
   background: url(https://img.freepik.com/free-vector/mojito-neon-text-drink-glass-ice-cubes-lemon-mint_1262-19572.jpg?ga=GA1.1.1317231084.1732013935&semt=ais_hybrid);
   width: 100px;
   height: 100px;

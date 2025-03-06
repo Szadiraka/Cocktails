@@ -1,0 +1,116 @@
+.details-container {
+  min-height: 100vh;
+  background: linear-gradient(
+    156deg,
+    rgba(65, 105, 225, 0.923406862745098) 6%,
+    rgba(65, 175, 231, 1) 93%
+  );
+}
+/* Header */
+.details-container .header {
+  height: 150px;
+  padding: 0 40px;
+}
+
+.details-container .header .flex-container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.details-container .logo {
+  background: url(https://www.thecocktaildb.com/images/logo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 76px;
+  width: 294px;
+}
+
+.details-container .link {
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+}
+.details-container .link:hover {
+  color: rgb(49, 218, 161);
+}
+
+/* Detail_Info */
+
+.detail-content {
+}
+
+.detail-content .waiting {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 5rem;
+  font-style: italic;
+}
+
+.detail-content .flex-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 700px;
+  min-width: 300px;
+  padding: 0 0.5rem;
+  margin: 0 auto;
+}
+
+.detail-content .title {
+  text-align: center;
+  font-size: 2rem;
+  margin: 0 2rem;
+  font-style: italic;
+  color: #7fffd4;
+}
+
+.detail-content .flex-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.detail-content .card .img img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.detail-content .flex-card2 {
+  display: flex;
+  flex-direction: row;
+  max-width: 700px;
+  min-width: 300px;
+  padding: 0 0.5rem;
+  margin: 0 auto;
+  color: white;
+  margin-bottom: 3rem;
+}
+
+.flex-card h3 {
+  margin-left: 2rem;
+}
+
+.detail-content .flex-card2 .info_ingredients {
+  width: 50%;
+}
+
+.detail-content .flex-card2 .recipe-drink {
+  width: 50%;
+}
+
+.info_ingredients .color1 {
+  color: #8fbc8f;
+}
+
+.recipe-drink .color2 {
+  color: #9400d3;
+}
+
+/* End Detail_Info */
+
+@media screen and (max-width: 600px) {
+  .details-container .logo {
+    display: none;
+  }
+}

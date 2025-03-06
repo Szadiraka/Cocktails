@@ -4,13 +4,13 @@ import categories from '../../db/Categories';
 import alcoholics from '../../db/Alcoholic';
 import glasses from '../../db/Glasses';
 import ingredients from '../../db/Ingredients';
-import { Filters } from '../Types';
+import { useContext } from 'react';
+import { ContextData } from '../MyContext';
+import { ContentProps } from '../Content/Content';
 
-type SideBarProps = {
-    saveChanges:(filter:Filters)=>void,   
-    filters:Filters
-}
-const SideBar = ({saveChanges,filters}:SideBarProps) => { 
+const SideBar = () => { 
+
+    const {saveChanges, filters} = useContext<ContentProps>(ContextData);
   
     const hadleFilterChange=(e:React.ChangeEvent<HTMLInputElement>)=>{
        const {value,name} = e.target;      

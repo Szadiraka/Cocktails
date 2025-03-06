@@ -1,18 +1,21 @@
-import {ChangeEvent, useState} from 'react';
+import {ChangeEvent, useState,useContext} from 'react';
 import { HiMiniMagnifyingGlass } from "react-icons/hi2";
 import { Filters } from '../Types';
+import { ContextData } from '../MyContext';
+
 import './Content.css';
 
 import { Drink } from '../Types';
 import DrinkItem from '../Drink/Drink';
-type ContentProps = {
+export type ContentProps = {
     drinks: Drink[],
     filters:Filters,
     saveChanges:(filter:Filters)=>void
 }
 
-const Content = ({drinks, filters, saveChanges}:ContentProps) => {
+const Content = () => {
   const [content, setContent] = useState("");
+  const {filters,saveChanges, drinks} = useContext<ContentProps>(ContextData);
 
   const changeContent=(e:ChangeEvent<HTMLInputElement>)=>{
     const {name,value} = e.target;
@@ -21,6 +24,7 @@ const Content = ({drinks, filters, saveChanges}:ContentProps) => {
      console.log(newFilters);
      saveChanges(newFilters);
   }
+
 
 
   return (
@@ -40,7 +44,7 @@ const Content = ({drinks, filters, saveChanges}:ContentProps) => {
         {/* Container */}
         <div className="container">
           {drinks.map((drink)=>(
-            <DrinkItem key={drink.idDrink} drink={drink}/>
+            <DrinkItem key={drink.idDrink} drink={drink} />
           ))}
            
         </div>   
